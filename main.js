@@ -5,7 +5,7 @@ const compose = function (target, ...numbers) {
         target[key] = numbers[i][key];
       }
     } else {
-      console.log(`Error: ${numbers[i]} is not an object`);
+      throw `Error: one of the arguments you provided is not an object - ${numbers[i]}`;
     }
   }
 
